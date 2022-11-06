@@ -7,12 +7,12 @@ const StyledTile = styled.div`
   width: 16vw;
   height: 16vw;
   border-radius: 50%;
-  background-color: #fafafa;
+  background-color: #6272a4;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 10rem;
-  color: ${gray};
+  color: #f8f8f2;
   box-shadow: 0px 0px 20px 0px ${gray};
 `
 const Tile = ({ index }) => {

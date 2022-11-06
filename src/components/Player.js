@@ -8,13 +8,13 @@ const StyledPlayer = styled(motion.div)`
   font-size: 1.5rem;
   background-color: ${col};
   border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   padding: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: ${white};
+  color: #f8f8f2; ;
 `
 const Player = ({ id, dragWrapper }) => {
   return (
