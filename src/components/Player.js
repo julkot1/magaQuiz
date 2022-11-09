@@ -12,14 +12,25 @@ const StyledPlayer = styled(motion.div)`
   height: 3rem;
   padding: 1.25rem;
   display: flex;
+  font-weight: 900;
   align-items: center;
   justify-content: center;
-  color: #f8f8f2; ;
+  color: #f8f8f2;
+  transition: all 0.5 ease-in-out;
+  transform: scale(1);
+
+  :hover {
+    transform: scale(1.5);
+  }
 `
 const Player = ({ id, dragWrapper }) => {
   return (
     <StyledPlayer
       drag
+      whileHover={{
+        scale: 1.1,
+        transition: { duration: 0.5, bounce: 0.5, type: 'spring' },
+      }}
       dragTransition={{ bounceDamping: 0, power: 0 }}
       dragConstraints={dragWrapper}
     >

@@ -15,7 +15,7 @@ const TilesWrapper = styled.div`
 const Tiles = () => {
   return (
     <TilesWrapper>
-      {[...Array(12)].map((x, i) => (
+      {[...Array(8)].map((x, i) => (
         <Tile index={i + 1} />
       ))}
     </TilesWrapper>

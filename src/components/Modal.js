@@ -9,6 +9,7 @@ const Md = styled(motion.div)`
   box-shadow: 0px 1px 12px 0px rgba(66, 68, 90, 1);
   display: flex;
   align-items: center;
+  z-index: 1;
   justify-content: center;
 `
 const dropIn = {
